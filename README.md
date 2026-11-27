@@ -9,3 +9,7 @@ Simulador de sistema bancário via terminal (CLI) desenvolvido em C++ para trein
 
 ## Tecnologias utilizadas
 - C++ (Standard Library)
+
+## Status e Próximas Atualizações
+
+> 🚧 **Status:** Em desenvolvimento contínuo.
