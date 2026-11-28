@@ -50,13 +50,12 @@ int main() {
 
     std::vector<Conta> contas = carregarContas();
 
-    //sistema de login
     std::cout << "--BEM VINDO AO BANCO DIGITAL--\n"
         << " [1] - Entrar na conta\n"
         << " [2] - Criar conta\n"
         << " Escolha: " << std::endl;
     std::cin >> opcoes_login;
-    //entrar na conta
+    
     if (opcoes_login == 1) {
         std::cout << "Usuario: " << std::endl;
         std::cin >> usuarioDigitado;
@@ -87,10 +86,8 @@ else if (opcoes_login == 2) {
     std::cout << "Digite uma senha: " << std::endl;
     std::cin >> novaConta.senhaSalva;
 
-    // Gera a chave Pix antes de salvar para nao deixar campo vazio no arquivo
     chavePixGerar(novaConta);
 
-    // Adiciona a nova conta no vector e salva o arquivo atualizado
     contas.push_back(novaConta);
     salvarContas(contas);
 
