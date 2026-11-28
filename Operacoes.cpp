@@ -19,7 +19,6 @@ void chavePixGerar(Conta& contaAtual) {
     }
 }
 
-//vector
 std::vector<Conta> carregarContas() {
     std::vector<Conta> lista;
     std::ifstream arquivo("banco_dados.text");
@@ -32,7 +31,6 @@ std::vector<Conta> carregarContas() {
     return lista;
 }
 
-//reescrevendo vector
 void salvarContas(const std::vector<Conta>& lista) {
     std::ofstream arquivo("banco_dados.text");
     for (const auto& c : lista) {
