@@ -117,32 +117,3 @@ void pixTransferencia(std::vector<Conta>& lista, int indiceOrigem) {
         }
     }   
 }
-
-void emprestimo(Conta& contaAtual) {
-    int emprestimo;
-    int valor;
-    while (true) {
-        std::cout << "--EMPRESTIMO--\n"
-            << "[1] - Emprestimo\n"
-            << "[2] - Pagar divida\n"
-            << "[3] - Voltar" << std::endl;
-        std::cin >> emprestimo;
-        switch (emprestimo) {
-        case 1:
-            std::cout << "Digite quanto de valor deseja ($1000 MAX): " << std::endl;
-            std::cin >> valor;
-            contaAtual.saldo += valor;
-            valor = std::min(valor, 1000);
-            std::cout << "Novo saldo: " << contaAtual.saldo << std::endl;
-            std::cout << "Em 2 Messes a divida sera cobrada" << std::endl;
-        case 2:
-            ;
-        case 3:
-            ;
-        case 4:
-            ;
-        }
-
-    }
-
-}
