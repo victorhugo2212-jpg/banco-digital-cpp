@@ -6,6 +6,7 @@ Simulador de sistema bancário via terminal (CLI) desenvolvido em C++ para trein
 - Consulta de saldo atual
 - Depósito de valores
 - Saque com validação de saldo insuficiente
+- Transferencia de pix
 
 ## Tecnologias utilizadas
 - C++ (Standard Library)
