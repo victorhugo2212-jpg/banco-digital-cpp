@@ -4,7 +4,7 @@ Simulador de sistema bancário via terminal (CLI) desenvolvido em C++ para trein
 
 ## Funcionalidades
 - Consulta de saldo atual
-- Depósito de valores
+- Geração automática de Chave Pix
 - Saque com validação de saldo insuficiente
 - Transferencia de pix
 
